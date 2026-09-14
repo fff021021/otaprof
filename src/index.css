@@ -809,25 +809,32 @@ input[type="range"]::-webkit-slider-thumb {
      ========================================= */
 
   .values-axis-row {
-    grid-template-columns: 110px minmax(0, 1fr) 36px;
-    gap: 8px;
-  }
+  grid-template-columns: 110px minmax(0, 1fr) 90px;
+  gap: 8px;
+  align-items: center;
+}
 
-  .values-axis-label {
-    min-width: 0;
-    font-size: 0.75rem;
-    line-height: 1.3;
-    overflow-wrap: break-word;
-  }
+.values-axis-label {
+  min-width: 0;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-align: right;
+  overflow-wrap: break-word;
+}
 
-  .values-axis-bar {
-    min-width: 0;
-  }
+.values-axis-bar {
+  min-width: 0;
+}
 
-  .values-axis-score {
-    min-width: 0;
-    font-size: 0.8rem;
-  }
+.values-axis-score {
+  min-width: 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+  white-space: normal;
+  word-break: normal;
+  overflow-wrap: break-word;
+}
 
 
   /* =========================================
